@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/menu_title"
+        style="@style/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal" />
+
+    <TextView
+        android:id="@+id/lblUsuario_menu"
+        style="@style/lblUsuarioMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário" />
+
+    <Button
+        android:id="@+id/btnCalculadora_menu"
+        style="@style/BotaoMenu"
+        android:background="@drawable/rounded_button"
+        android:text="Calculadora"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnMegaSena_menu"
+        style="@style/BotaoMenu"
+        android:background="@drawable/rounded_button"
+        android:text="Mega-Sena"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnLinguagemProgramacao_menu"
+        style="@style/BotaoMenu"
+        android:background="@drawable/rounded_button"
+        android:text="Lista"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnBanco_menu"
+        style="@style/BotaoMenu"
+        android:background="@drawable/rounded_button"
+        android:text="Banco"
+        android:textAllCaps="false" />
+
+</LinearLayout>

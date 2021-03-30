@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".telas.EventoActivity">
+
+    <TextView
+        style="@style/TextoNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/txtNome_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <TextView
+        style="@style/TextoNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data:" />
+
+    <EditText
+        android:id="@+id/txtData_evento"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnExcluir_evento"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_color_primary"
+        android:text="Excluir"
+        android:textColor="@color/colorWhite">
+    </Button>
+
+
+</LinearLayout>

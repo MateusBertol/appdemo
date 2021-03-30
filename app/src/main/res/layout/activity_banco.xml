@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".telas.BancoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblNomeConta1_banco"
+                style="@style/lblContas"
+                android:text="Conta1" />
+
+            <TextView
+                android:id="@+id/lblSaldoConta1_banco"
+                style="@style/lblContas"
+                android:layout_marginBottom="5dp"
+                android:text="R$5000,00" />
+
+            <TextView
+                android:id="@+id/lblChequeConta1_banco"
+                style="@style/lblContas"
+                android:layout_marginBottom="20dp"
+                android:text="R$0000,00" />
+
+            <Button
+                android:id="@+id/btnTransfereConta1_banco"
+                style="@style/BotaoPadrao"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Transf. P/ Conta 2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblNomeConta2_banco"
+                style="@style/lblContas"
+                android:text="Conta2" />
+
+            <TextView
+                android:id="@+id/lblSaldoConta2_banco"
+                style="@style/lblContas"
+                android:layout_marginBottom="5dp"
+                android:text="R$8000,00" />
+
+            <TextView
+                android:id="@+id/lblChequeConta2_banco"
+                style="@style/lblContas"
+                android:layout_marginBottom="20dp"
+                android:text="R$0000,00" />
+
+            <Button
+                android:id="@+id/btnTransfereConta2_banco"
+                style="@style/BotaoPadrao"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Transf. P/ Conta1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtValorTransferencia"
+        style="@style/txtTextoBanco"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/colorWhite"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblHistoricoFixo_banco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Histórico" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblHistorico_banco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="left" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

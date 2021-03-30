@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".telas.CalculadoraActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblNum1_calculadora"
+            style="@style/txtNumeros"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Num1:" />
+
+        <EditText
+            android:id="@+id/txtCampo1_calculadora"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/lblNum2_calculadora"
+            style="@style/txtNumeros"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Num2:" />
+
+        <EditText
+            android:id="@+id/txtCampo2_calculadora"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <!-- layout_width = LARGURA DO COMPONENTE -->
+    <!-- layout_heigth = ALTURA DO COMPONENTE -->
+
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnSomar_calculadora"
+            style="@style/BotaoContas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSubtrair_calculadora"
+            style="@style/BotaoContas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnApagarTexto_calculadora"
+        style="@style/BotaoApagar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Apagar" />
+
+    <TextView
+        android:id="@+id/lblTexto_calculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RESULTADO"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
